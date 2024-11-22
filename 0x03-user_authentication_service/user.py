@@ -8,6 +8,7 @@ Base = declarative_base()
 
 
 class User(Base):
+    """ User model """
     __tablename__ = "users"
     id = Column(Integer, nullable=False, primary_key=True)
     email = Column(String(250), nullable=False)
